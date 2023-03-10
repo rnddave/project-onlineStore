@@ -1,19 +1,21 @@
 
 // usual CSS style target
 .categories-container {
-    background-color: goldenrod;
-    padding: 5%;
-}
-
-// nested target
-.categories-container .ccategory-container {
     background-color: red;
-    padding: 10%;
+    padding: 5%;
+
+    // with SASS we can next our nested targets within
+    .category-container {
+        background-color: rgb(192, 71, 71);
+        padding: 5%;
+
+        // and a nested nested target
+        .category-body-container {
+            background-color: gold;
+            padding: 2%;
+        }
+    }
 }
 
-// nested nested target
 
-.categories-container .category-container .category-body-container {
-    background-color: rgb(198, 45, 45);
-    padding: 2%;
-}
+
