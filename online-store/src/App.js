@@ -6,35 +6,35 @@ const App = () => {
       <div className="category-container">
         {/*<img></img>*/}
         <div className="category-body-container">
-          <h2>Hats</h2>
+          <h2>Cookbooks</h2>
           <p>shop now</p>
         </div>
       </div>
       <div className="category-container">
         {/*<img></img>*/}
         <div className="category-body-container">
-          <h2>Jackets</h2>
+          <h2>Food</h2>
           <p>shop now</p>
         </div>
       </div>
       <div className="category-container">
         {/*<img></img>*/}
         <div className="category-body-container">
-          <h2>Sneakers</h2>
+          <h2>Drinks</h2>
           <p>shop now</p>
         </div>
       </div>
       <div className="category-container">
         {/*<img></img>*/}
         <div className="category-body-container">
-          <h2>Womens</h2>
+          <h2>Cookware</h2>
           <p>shop now</p>
         </div>
       </div>
       <div className="category-container">
         {/*<img></img>*/}
         <div className="category-body-container">
-          <h2>Mens</h2>
+          <h2>Tableware</h2>
           <p>shop now</p>
         </div>
       </div>
