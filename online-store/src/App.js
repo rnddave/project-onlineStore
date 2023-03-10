@@ -1,43 +1,43 @@
 
 
 const App = () => {
+
+  // we want an array to hold the categories
+  const categories = [
+    {
+      id: 1,
+      title: 'Cookbooks'
+    },
+    {
+      id: 2,
+      title: 'Food'
+    },
+    {
+      id: 3,
+      title: 'Drinks'
+    },
+    {
+      id: 4,
+      title: 'Cookware'
+    },
+    {
+      id: 5,
+      title: 'Tableware'
+    }
+  ]
+
   return (
+    //now we need to map the categories to the page
     <div className="categories-container">
-      <div className="category-container">
-        {/*<img></img>*/}
-        <div className="category-body-container">
-          <h2>Cookbooks</h2>
-          <p>shop now</p>
+      {categories.map(({title}) => (
+        <div className="category-container">
+          {/*<img></img>*/}
+          <div className="category-body-container">
+            <h2>{title}</h2>
+            <p>shop now</p>
+          </div>
         </div>
-      </div>
-      <div className="category-container">
-        {/*<img></img>*/}
-        <div className="category-body-container">
-          <h2>Food</h2>
-          <p>shop now</p>
-        </div>
-      </div>
-      <div className="category-container">
-        {/*<img></img>*/}
-        <div className="category-body-container">
-          <h2>Drinks</h2>
-          <p>shop now</p>
-        </div>
-      </div>
-      <div className="category-container">
-        {/*<img></img>*/}
-        <div className="category-body-container">
-          <h2>Cookware</h2>
-          <p>shop now</p>
-        </div>
-      </div>
-      <div className="category-container">
-        {/*<img></img>*/}
-        <div className="category-body-container">
-          <h2>Tableware</h2>
-          <p>shop now</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
